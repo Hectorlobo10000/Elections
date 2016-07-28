@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows;
+using System.Windows.Controls;
 using Caliburn.Micro;
 
 namespace Elections.Server.Handler.ViewModels
@@ -12,11 +13,14 @@ namespace Elections.Server.Handler.ViewModels
             _mainViewModel = mainViewModel;
         }
 
-        public void Login()
+        public void Login(Object password)
         {
-            _mainViewModel.ScreenView = _mainViewModel.ControlPanelView;
-            _mainViewModel.TitleWindow = "Panel de Control";
-            HandlerBootstrapper.Title(_mainViewModel.TitleWindow);
+            var pass = (PasswordBox) password;
+
+
+            //_mainViewModel.ScreenView = _mainViewModel.ControlPanelView;
+            //_mainViewModel.TitleWindow = "Panel de Control";
+            //HandlerBootstrapper.Title(_mainViewModel.TitleWindow);
         }
     }
 }
