@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Elections.Server.Handler.Views
 {
     /// <summary>
-    /// Lógica de interacción para UserControl1.xaml
+    /// Lógica de interacción para StudentView.xaml
     /// </summary>
-    public partial class MainView : UserControl
+    public partial class StudentView : UserControl
     {
-        public MainView()
+        public StudentView()
         {
             InitializeComponent();
         }

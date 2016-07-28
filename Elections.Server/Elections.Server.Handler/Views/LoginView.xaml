@@ -4,11 +4,20 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             Height="400" Width="500">
-    <Grid>
-        
-        <PasswordBox HorizontalAlignment="Left" Margin="352,30,0,0" VerticalAlignment="Top" Width="129"/>
-        <Button Content="Login" HorizontalAlignment="Left" Margin="406,65,0,0" VerticalAlignment="Top" Width="75"/>
+             Height="531" Width="1096">
+    <ContentControl>
+        <ContentControl.Background>
+            <ImageBrush/>
+        </ContentControl.Background>
+        <Grid >
+            <Border BorderBrush="#FFABADB3" BorderThickness="1" HorizontalAlignment="Left" Height="23" Margin="900,100,0,0" VerticalAlignment="Top" Width="160">
+                <TextBox TextWrapping="Wrap"/>
+            </Border>
+            <Border BorderBrush="#FFABADB3" BorderThickness="1" HorizontalAlignment="Left" Height="23" Margin="900,150,0,0" VerticalAlignment="Top" Width="160">
+                <PasswordBox/>
+            </Border>
+            <Button x:Name="Login" Content="Login" HorizontalAlignment="Left" Margin="985,200,0,0" VerticalAlignment="Top" Width="75"/>
 
-    </Grid>
+        </Grid>
+    </ContentControl>
 </UserControl>

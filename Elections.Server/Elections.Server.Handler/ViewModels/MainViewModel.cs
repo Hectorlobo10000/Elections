@@ -1,20 +1,43 @@
-﻿
-using System;
+﻿using System;
+using System.Windows;
+using System.Windows.Controls;
 using Caliburn.Micro;
 
 namespace Elections.Server.Handler.ViewModels
 {
-    public class MainViewModel : Conductor<object>
+    public class MainViewModel : PropertyChangedBase
     {
 
-        String _titleWindow;
 
+        Int64 _height;
+        public Int64 Width
+        {
+            get { return _width; }
+            set
+            {
+                _width = value;
+                NotifyOfPropertyChange(() => Width);
+            }
+        }
+
+        Int64 _width;
+        public Int64 Height
+        {
+            get{return _height;}
+            set
+            {
+                _height = value;
+                NotifyOfPropertyChange(() => Height);
+            }
+        }
+
+        String _titleWindow;
         public String TitleWindow
         {
             get
             {
                 return _titleWindow;
-                
+
             }
 
             set
@@ -24,15 +47,47 @@ namespace Elections.Server.Handler.ViewModels
             }
         }
 
-        public MainViewModel()
+        Object _screenView;
+        public Object ScreenView 
         {
-            TitleWindow = "Login";
-            ShowLoginView(); 
+            get { return _screenView; }
+            set
+            {
+                _screenView = value;
+                NotifyOfPropertyChange(() => ScreenView);
+            } 
         }
 
-        public void ShowLoginView()
+        LoginViewModel _loginView;
+        public LoginViewModel LoginView
         {
-            ActivateItem(new LoginViewModel());
+            get { return _loginView; }
+            set
+            {
+                _loginView = value;
+                NotifyOfPropertyChange(() => LoginView);
+            }
+        }
+
+        ControlPanelViewModel _controlPanelView;
+        public ControlPanelViewModel ControlPanelView
+        {
+            get { return _controlPanelView; }
+            set
+            {
+                _controlPanelView = value;
+                NotifyOfPropertyChange(() => ControlPanelView);
+            }
+        }
+
+        public MainViewModel()
+        {
+            Height = 531;
+            Width = 1096;
+            ControlPanelView = new ControlPanelViewModel();
+            LoginView = new LoginViewModel();
+            LoginView.SetMain(this);
+            ScreenView = LoginView;
         }
     }
 }

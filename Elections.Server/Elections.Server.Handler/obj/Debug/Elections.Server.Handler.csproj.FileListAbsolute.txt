@@ -21,5 +21,13 @@ C:\Projects\Elections\Elections.Server\Elections.Server.Handler\obj\Debug\Electi
 C:\Projects\Elections\Elections.Server\Elections.Server.Handler\obj\Debug\App.baml
 C:\Projects\Elections\Elections.Server\Elections.Server.Handler\obj\Debug\Views\LoginView.baml
 C:\Projects\Elections\Elections.Server\Elections.Server.Handler\obj\Debug\Views\LoginView.g.cs
+C:\Projects\Elections\Elections.Server\Elections.Server.Handler\obj\Debug\Views\StudentView.baml
+C:\Projects\Elections\Elections.Server\Elections.Server.Handler\obj\Debug\Views\StudentView.g.cs
+C:\Projects\Elections\Elections.Server\Elections.Server.Handler\obj\Debug\Views\RecordView.baml
+C:\Projects\Elections\Elections.Server\Elections.Server.Handler\obj\Debug\Views\RecordView.g.cs
+C:\Projects\Elections\Elections.Server\Elections.Server.Handler\obj\Debug\Views\ControlPanelView.baml
+C:\Projects\Elections\Elections.Server\Elections.Server.Handler\obj\Debug\Views\ControlPanelView.g.cs
+C:\Projects\Elections\Elections.Server\Elections.Server.Handler\obj\Debug\Views\ListStudentsView.baml
+C:\Projects\Elections\Elections.Server\Elections.Server.Handler\obj\Debug\Views\ListStudentsView.g.cs
 C:\Projects\Elections\Elections.Server\Elections.Server.Handler\obj\Debug\Views\MainView.baml
 C:\Projects\Elections\Elections.Server\Elections.Server.Handler\obj\Debug\Views\MainView.g.cs

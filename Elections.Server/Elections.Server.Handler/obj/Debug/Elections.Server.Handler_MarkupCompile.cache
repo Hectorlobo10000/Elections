@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Projects\Elections\Elections.Server\Elections.Server.Handler\App.xaml
-2605011186
+6-2117532201
 
-9-1145224930
-66-1198443010
-Views\MainView.xaml;Views\LoginView.xaml;
+17-952414910
+76-14366226
+Views\ControlPanelView.xaml;Views\ListStudentsView.xaml;Views\MainView.xaml;Views\LoginView.xaml;Views\RecordView.xaml;Views\StudentView.xaml;
 
 False
 
