@@ -9,8 +9,8 @@ namespace Elections.Server.Handler.ViewModels
     {
 
 
-        Int64 _height;
-        public Int64 Width
+        int _height;
+        public int Width
         {
             get { return _width; }
             set
@@ -20,8 +20,8 @@ namespace Elections.Server.Handler.ViewModels
             }
         }
 
-        Int64 _width;
-        public Int64 Height
+        int _width;
+        public int Height
         {
             get{return _height;}
             set
@@ -31,8 +31,8 @@ namespace Elections.Server.Handler.ViewModels
             }
         }
 
-        String _titleWindow;
-        public String TitleWindow
+        string _titleWindow;
+        public string TitleWindow
         {
             get
             {

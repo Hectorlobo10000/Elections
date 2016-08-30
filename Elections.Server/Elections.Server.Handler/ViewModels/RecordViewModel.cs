@@ -12,7 +12,7 @@ namespace Elections.Server.Handler.ViewModels
 
         public void AddStudent()
         {
-            _mainViewModel.TitleWindow = "Agregar Estudiante";
+           // _mainViewModel.TitleWindow = "Agregar Estudiante";
             _mainViewModel.Height =485;
             _mainViewModel.Width =268;
         }

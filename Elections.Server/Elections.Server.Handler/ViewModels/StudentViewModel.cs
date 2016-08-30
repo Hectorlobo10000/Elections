@@ -13,7 +13,7 @@ namespace Elections.Server.Handler.ViewModels
 
         public void Cancel()
         {
-            _mainViewModel.TitleWindow = "Registro";
+            //_mainViewModel.TitleWindow = "Registro";
             _mainViewModel.Height = 350;
             _mainViewModel.Width = 600;
         }

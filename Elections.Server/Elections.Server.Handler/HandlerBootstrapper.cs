@@ -16,7 +16,7 @@ namespace Elections.Server.Handler
         {
             DisplayRootViewFor<MainViewModel>();
             _application = Application;
-            _application.MainWindow.Title = "Login";
+            _application.MainWindow.Title = "Panel de Control";
             _application.MainWindow.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             _application.MainWindow.ResizeMode = ResizeMode.NoResize;
         }
