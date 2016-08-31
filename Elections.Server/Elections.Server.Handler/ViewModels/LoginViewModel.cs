@@ -18,7 +18,7 @@ namespace Elections.Server.Handler.ViewModels
             
             _mainViewModel.ScreenView = _mainViewModel.ControlPanelView;
             //_mainViewModel.TitleWindow = "Panel de Control";
-            HandlerBootstrapper.Title(_mainViewModel.TitleWindow);
+            //HandlerBootstrapper.Title(_mainViewModel.TitleWindow);
         }
     }
 }

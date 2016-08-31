@@ -3,8 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
-             xmlns:cal="http://www.caliburnproject.org"
              mc:Ignorable="d" 
              Height="531" Width="1096">
     <ContentControl>
@@ -12,22 +10,7 @@
             <ImageBrush/>
         </ContentControl.Background>
         <Grid >
-            <Border BorderBrush="#FFABADB3" BorderThickness="1" HorizontalAlignment="Left" Height="23" Margin="900,100,0,0" VerticalAlignment="Top" Width="160">
-                <TextBox TextWrapping="Wrap"/>
-            </Border>
-            <Border BorderBrush="#FFABADB3" BorderThickness="1" HorizontalAlignment="Left" Height="23" Margin="900,150,0,0" VerticalAlignment="Top" Width="160">
-                <PasswordBox x:Name="PasswordBox"/>
-            </Border>
-            <Button Content="Login" HorizontalAlignment="Left" Margin="985,200,0,0" VerticalAlignment="Top" Width="75">
-                <i:Interaction.Triggers>
-                    <i:EventTrigger EventName="Click">
-                        <cal:ActionMessage MethodName="Login">
-                            <cal:Parameter Value="{Binding ElementName=PasswordBox}" />
-                        </cal:ActionMessage>
-                    </i:EventTrigger>
-                </i:Interaction.Triggers>
-            </Button>
-
+            <Button x:Name="Login" Content="Login" HorizontalAlignment="Left" Margin="510,400,0,0" VerticalAlignment="Top" Width="75"/>
         </Grid>
     </ContentControl>
 </UserControl>
