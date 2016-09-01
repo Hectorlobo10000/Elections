@@ -1,5 +1,7 @@
 ﻿using System;
 using Caliburn.Micro;
+using Elections.Server.Handler.Others;
+
 
 namespace Elections.Server.Handler.ViewModels
 {
@@ -11,11 +13,12 @@ namespace Elections.Server.Handler.ViewModels
             _mainViewModel = mainViewModel;
         }
 
-        public void Cancel()
+        public void Save(Object contentGrid)
         {
-            //_mainViewModel.TitleWindow = "Registro";
-            _mainViewModel.Height = 350;
-            _mainViewModel.Width = 600;
+            if (Validations.ValidateFields(contentGrid) == 0)
+            {
+                
+            }
         }
     }
 }

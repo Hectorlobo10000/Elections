@@ -1,44 +1,60 @@
 ﻿<UserControl x:Class="Elections.Server.Handler.Views.StudentView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             Height="485" Width="268">
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:cal="http://www.caliburnproject.org"
+             Height="416" Width="268">
 
     <Border BorderBrush="Black" BorderThickness="1">
-        <Grid HorizontalAlignment="Left" Height="485" VerticalAlignment="Top" Width="268">
-            <Label Content="Número" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-            <Border BorderBrush="#FFABADB3" BorderThickness="1" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" VerticalAlignment="Top" Width="120" >
-                <TextBox TextWrapping="Wrap"/>
+        
+        <Grid x:Name="ContentGrid" HorizontalAlignment="Left" Height="416" VerticalAlignment="Top" Width="268">
+            <Border HorizontalAlignment="Left" Height="26" Margin="10,10,0,0" VerticalAlignment="Top" Width="248">
+                <xctk:WatermarkTextBox Name="Number" Watermark="Ingrese Número..." BorderBrush="SteelBlue" BorderThickness="0,0,0,1" Text="{Binding Number}"/>
             </Border>
-            <Label Content="Identidad" HorizontalAlignment="Left" Margin="137,10,0,0" VerticalAlignment="Top"/>
-            <Border BorderBrush="#FFABADB3" BorderThickness="1" HorizontalAlignment="Left" Height="23" Margin="137,36,0,0" VerticalAlignment="Top" Width="120">
-                <TextBox TextWrapping="Wrap"/>
+            
+            <Border HorizontalAlignment="Left" Height="26" Margin="10,46,0,0" VerticalAlignment="Top" Width="248">
+                <xctk:WatermarkTextBox Watermark="Ingrese Identidad..." BorderBrush="SteelBlue" BorderThickness="0,0,0,1" Text="{Binding FirstName}"/>
             </Border>
-            <Label Content="Primer Nombre" HorizontalAlignment="Left" Margin="10,73,0,0" VerticalAlignment="Top"/>
-            <Border BorderBrush="#FFABADB3" BorderThickness="1" HorizontalAlignment="Left" Height="23" Margin="10,104,0,0" VerticalAlignment="Top" Width="120">
-                <TextBox TextWrapping="Wrap"/>
+
+            <Border HorizontalAlignment="Left" Height="26" Margin="10,82,0,0" VerticalAlignment="Top" Width="248">
+                <xctk:WatermarkTextBox Watermark="Ingrese Primer Nombre..." BorderBrush="SteelBlue" BorderThickness="0,0,0,1"/>            
             </Border>
-            <Label Content="Segundo Nombre" HorizontalAlignment="Left" Margin="137,73,0,0" VerticalAlignment="Top"/>
-            <Border BorderBrush="#FFABADB3" BorderThickness="1" HorizontalAlignment="Left" Height="23" Margin="137,104,0,0" VerticalAlignment="Top" Width="120">
-                <TextBox TextWrapping="Wrap"/>
+
+            <Border HorizontalAlignment="Left" Height="26" Margin="10,118,0,0" VerticalAlignment="Top" Width="248">
+                <xctk:WatermarkTextBox Watermark="Ingrese Segundo Nombre..."  BorderBrush="SteelBlue" BorderThickness="0,0,0,1"/>
             </Border>
-            <Label Content="Primer Apellido" HorizontalAlignment="Left" Margin="10,145,0,0" VerticalAlignment="Top"/>
-            <Border BorderBrush="#FFABADB3" BorderThickness="1" HorizontalAlignment="Left" Height="23" Margin="10,180,0,0" VerticalAlignment="Top" Width="120">
-                <TextBox TextWrapping="Wrap"/>
+
+            <Border HorizontalAlignment="Left" Height="26" Margin="10,154,0,0" VerticalAlignment="Top" Width="248">
+                <xctk:WatermarkTextBox Watermark="Ingrese Primer Apellido..."  BorderBrush="SteelBlue" BorderThickness="0,0,0,1"/>
             </Border>
-            <Label Content="Segundo Apellido" HorizontalAlignment="Left" Margin="139,145,0,0" VerticalAlignment="Top"/>
-            <Border BorderBrush="#FFABADB3" BorderThickness="1" HorizontalAlignment="Left" Height="23" Margin="137,180,0,0" VerticalAlignment="Top" Width="120">
-                <TextBox TextWrapping="Wrap"/>
+
+            <Border HorizontalAlignment="Left" Height="26" Margin="10,190,0,0" VerticalAlignment="Top" Width="248">
+                <xctk:WatermarkTextBox Watermark="Ingrese Segundo Apellido..." BorderBrush="SteelBlue" BorderThickness="0,0,0,1"/>
             </Border>
-            <Label Content="Sexo" HorizontalAlignment="Left" Margin="10,224,0,0" VerticalAlignment="Top"/>
-            <ComboBox HorizontalAlignment="Left" Margin="10,255,0,0" VerticalAlignment="Top" Width="247"/>
-            <Label Content="Grado" HorizontalAlignment="Left" Margin="10,296,0,0" VerticalAlignment="Top"/>
-            <ComboBox HorizontalAlignment="Left" Margin="10,327,0,0" VerticalAlignment="Top" Width="247"/>
-            <Label Content="Sección" HorizontalAlignment="Left" Margin="14,371,0,0" VerticalAlignment="Top"/>
-            <ComboBox HorizontalAlignment="Left" Margin="10,402,0,0" VerticalAlignment="Top" Width="247"/>
-            <Button x:Name="Acept" Content="Aceptar" HorizontalAlignment="Left" Margin="86,454,0,0" VerticalAlignment="Top" Width="75"/>
-            <Button x:Name="Cancel" Content="Cancelar" HorizontalAlignment="Left" Margin="182,454,0,0" VerticalAlignment="Top" Width="75"/>
+            
+            <Border HorizontalAlignment="Left" Height="26" Margin="10,226,0,0" VerticalAlignment="Top" Width="248">
+                <xctk:WatermarkComboBox Watermark="Sexo..." BorderBrush="SteelBlue" BorderThickness="1,1,1,1"/>
+            </Border>
+            
+            <Border HorizontalAlignment="Left" Height="26" Margin="10,262,0,0" VerticalAlignment="Top" Width="248">
+                <xctk:WatermarkComboBox Watermark="Grado..." BorderBrush="SteelBlue" BorderThickness="1,1,1,1"/>
+            </Border>
+
+            <Border HorizontalAlignment="Left" Height="26" Margin="10,298,0,0" VerticalAlignment="Top" Width="248">
+                <xctk:WatermarkComboBox Watermark="Sección..." BorderBrush="SteelBlue" BorderThickness="1,1,1,1"/>
+            </Border>
+
+            <Button Content="Guardar" HorizontalAlignment="Left" Margin="10,344,0,0" VerticalAlignment="Top" Width="248" Height="26">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Click">
+                        <cal:ActionMessage MethodName="Save">
+                            <cal:Parameter Value="{Binding ElementName=ContentGrid}" />
+                        </cal:ActionMessage>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </Button>
+            <Button x:Name="Cancel" Content="Cancelar" HorizontalAlignment="Left" Margin="10,380,0,0" VerticalAlignment="Top" Width="248" Height="26"/>
         </Grid>
     </Border>
 

@@ -1,16 +1,13 @@
 ﻿<UserControl x:Class="Elections.Server.Handler.Views.ControlPanelView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              Height="531" Width="1096">
     <Grid Height="531" Width="1096">
         <Label Content="Agregar Estudiante" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="268"/>
-        <ContentControl Name="StudentView" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Height="485" Width="268"/>
-        <Label Content="Lista Estudiantes" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="279,10,0,0" VerticalAlignment="Top" Width="268"/>
-        <ContentControl Name="ListStudentsView" HorizontalAlignment="Left" Margin="279,36,0,0" VerticalAlignment="Top" Height="485" Width="268"/>
-        <Label Content="Registro de votos" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="548,10,0,0" VerticalAlignment="Top" Width="538"/>
-        <ContentControl Name="RecordView"  HorizontalAlignment="Left" Margin="548,36,0,0" VerticalAlignment="Top" Height="260" Width="538"/>
-
+        <ContentControl Name="StudentView" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Height="416" Width="268"/>
+        <Label Content="Lista Estudiantes" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="405,10,0,0" VerticalAlignment="Top" Width="268"/>
+        <ContentControl Name="ListStudentsView" HorizontalAlignment="Left" Margin="279,36,0,0" VerticalAlignment="Top" Height="416" Width="538"/>
+        <Label Content="Registro de votos" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="818,10,0,0" VerticalAlignment="Top" Width="270"/>
+        <ContentControl Name="RecordView"  HorizontalAlignment="Left" Margin="818,36,0,0" VerticalAlignment="Top" Height="416" Width="270"/>
     </Grid>
 </UserControl>
