@@ -1,24 +1,26 @@
 using System;
 using System.Configuration;
+using System.Data.Odbc;
 using System.Windows.Forms;
+using Elections.Server.Library.Repository;
 using MySql.Data.MySqlClient;
 
 namespace Elections.Server.Library.Connection
 {
-    public class Connection
+    public class Setup
     {
-        public static MySqlConnection GetConnection()
+        public MySqlConnection OConnection { get; set; } 
+        public Setup()
         {
             var connectionString = ConfigurationManager.ConnectionStrings["Mysql"].ConnectionString;
-            var connection = new MySqlConnection(connectionString);
-            return connection;
+            OConnection = new MySqlConnection(connectionString);
         }
 
-        public static void OpenConnection()
+        public void OpenConnection()
         {
             try
             {
-                GetConnection().Open();
+                OConnection.Open();
             }
             catch (Exception e)
             {
@@ -26,16 +28,24 @@ namespace Elections.Server.Library.Connection
             }
         }
 
-        public static void CloseConnection()
+        public void CloseConnection()
         {
             try
             {
-                GetConnection().Close();
+                OConnection.Close();
             }
             catch (Exception e)
             {
                 MessageBox.Show(e.Message);
             }
+        }
+
+        public void LoadTables()
+        {
+            OpenConnection();
+            DataBase dataBase = DataBase.Init(OConnection, 30);
+            dataBase.AllStudents = dataBase.Students.All();
+
         }
     }
 }
