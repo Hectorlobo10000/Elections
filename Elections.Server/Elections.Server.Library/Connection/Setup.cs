@@ -43,9 +43,11 @@ namespace Elections.Server.Library.Connection
         {
             OpenConnection();
 
-            DataBase dataBase = DataBase.Init(OConnection, 30);
+            DataBase dataBase = DataBase.Init(OConnection, 20);
             dataBase.AllStudents = dataBase.Students.All();
-
+            dataBase.AllGrades = dataBase.Grades.All();
+            dataBase.AllSections = dataBase.Sections.All();
+            dataBase.AllSexes = dataBase.Sexes.All();
 
             CloseConnection();
         }
