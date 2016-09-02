@@ -1,6 +1,5 @@
 using System;
 using System.Configuration;
-using System.Data.Odbc;
 using System.Windows.Forms;
 using Elections.Server.Library.Repository;
 using MySql.Data.MySqlClient;
@@ -43,9 +42,12 @@ namespace Elections.Server.Library.Connection
         public void LoadTables()
         {
             OpenConnection();
+
             DataBase dataBase = DataBase.Init(OConnection, 30);
             dataBase.AllStudents = dataBase.Students.All();
 
+
+            CloseConnection();
         }
     }
 }

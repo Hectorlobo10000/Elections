@@ -1,9 +1,12 @@
 C:\Projects\Elections\Elections.Server\Elections.Server.Library\bin\Debug\Elections.Server.Library.dll.config
 C:\Projects\Elections\Elections.Server\Elections.Server.Library\bin\Debug\Elections.Server.Library.dll
 C:\Projects\Elections\Elections.Server\Elections.Server.Library\bin\Debug\Elections.Server.Library.pdb
-C:\Projects\Elections\Elections.Server\Elections.Server.Library\bin\Debug\Dapper.dll
 C:\Projects\Elections\Elections.Server\Elections.Server.Library\bin\Debug\MySql.Data.dll
-C:\Projects\Elections\Elections.Server\Elections.Server.Library\bin\Debug\Dapper.xml
 C:\Projects\Elections\Elections.Server\Elections.Server.Library\obj\Debug\Elections.Server.Library.csprojResolveAssemblyReference.cache
 C:\Projects\Elections\Elections.Server\Elections.Server.Library\obj\Debug\Elections.Server.Library.dll
 C:\Projects\Elections\Elections.Server\Elections.Server.Library\obj\Debug\Elections.Server.Library.pdb
+C:\Projects\Elections\Elections.Server\Elections.Server.Library\bin\Debug\Dapper.Rainbow.MySql.dll
+C:\Projects\Elections\Elections.Server\Elections.Server.Library\bin\Debug\Dapper.Rainbow.MySql.xml
+C:\Projects\Elections\Elections.Server\Elections.Server.Library\bin\Debug\Dapper.dll
+C:\Projects\Elections\Elections.Server\Elections.Server.Library\bin\Debug\Dapper.xml
+C:\Projects\Elections\Elections.Server\Elections.Server.Library\bin\Debug\Dapper.pdb
