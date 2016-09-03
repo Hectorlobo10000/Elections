@@ -48,7 +48,7 @@ namespace Elections.Server.Library.Connection
             dataBase.AllGrades = dataBase.Grades.All();
             dataBase.AllSections = dataBase.Sections.All();
             dataBase.AllSexes = dataBase.Sexes.All();
-
+            //Hello
             CloseConnection();
         }
     }
